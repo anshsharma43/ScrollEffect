@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Project #4 - Smooth Scroll Effect</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home">
+      <h1>RABBITS</h1>
+      <p>
+        Rabbits, or bunnies, are small mammals in the family <strong> Leporidae</strong>.
+        <br>
+        Male rabbits are called <em> bucks </em> females are called <em> does </em>.
+        <br>
+
+      </p>
+    </section>
+
+    <section id="about">
+      <h1>CATS</h1>
+      <p>
+        The cat is a domestic species of small <strong> carnivorous </strong>mammal.
+        <br>
+        Cats are one of the most popular <strong> domesticated </strong> species.
+        <br>
+        Domestic cats are valued by humans for <em> companionship </em> and their ability to hunt <strong> rodents
+        </strong>.
+      </p>
+    </section>
+
+    <section id="services">
+      <h1>DUCKS</h1>
+      <p>
+        Duck is the common name for numerous species of waterfowl in the family <strong> Anatidae </strong>.
+        <br>
+        Ducks are generally <em> smaller and shorter-necked </em> than swans and geese, which are also members of the
+        same family.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h1>KITTENS</h1>
+      <p>
+        A kitten is <strong> a juvenile cat </strong>.
+        <br>
+        After being born, kittens display primary altriciality and are totally dependent on
+        their mother for survival.
+        <br>
+        They do not normally open their eyes until after seven to ten days.
+      </p>
+    </section>
+  </div>
+
+  <!-- External JS File (Smooth Scroll) -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <!-- JS Script -->
+  <script>
+    const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+      speed: 800,
+    });
+  </script>
+</body>
+
+</html>
